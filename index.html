@@ -1,1 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Portfolio</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.profile-img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:42px;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:32px;
+    color:#2563eb;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skill{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    max-width:700px;
+    margin:auto;
+}
+
+.contact-box p{
+    margin:12px 0;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:12px 18px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0f172a;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <img
+    src="https://via.placeholder.com/300"
+    alt="Profile Photo"
+    class="profile-img">
+
+    <h1>Your Name</h1>
+
+    <p>Web Developer | Designer | Entrepreneur</p>
+
+</header>
+
+<div class="container">
+
+    <!-- About -->
+    <section>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a passionate professional dedicated to creating
+                innovative digital solutions. My expertise includes
+                web development, UI/UX design, branding, and business
+                technology solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">UI/UX Design</div>
+            <div class="skill">Digital Marketing</div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section>
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>Business Website</h3>
+                <p>
+                    Developed a modern corporate website with
+                    responsive design and SEO optimization.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                    Built an online shopping platform featuring
+                    payment integration and inventory management.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Mobile App UI</h3>
+                <p>
+                    Designed user-friendly interfaces for
+                    Android and iOS applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-box">
+
+            <p><strong>Name:</strong> Your Name</p>
+
+            <p><strong>Email:</strong> your@email.com</p>
+
+            <p><strong>Phone:</strong> +675 XXX XXXX</p>
+
+            <p><strong>Location:</strong> Port Moresby, Papua New Guinea</p>
+
+            <p><strong>Website:</strong> www.yourwebsite.com</p>
+
+            <div class="social-links">
+
+                <a href="https://facebook.com/yourprofile" target="_blank">
+                    Facebook
+                </a>
+
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">
+                    LinkedIn
+                </a>
+
+                <a href="https://instagram.com/yourprofile" target="_blank">
+                    Instagram
+                </a>
+
+                <a href="https://github.com/yourprofile" target="_blank">
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    © 2026 Your Name. All Rights Reserved.
+</footer>
+
+</body>
+</html>
